@@ -6,9 +6,30 @@ Image assets for the Garvey Club website rebuild.
 
 ```
 /
+├── brand/      # Logo and social meta images
 ├── rolling/    # 16 rolling banner images
 └── gallery/    # 16 curated gallery images
 ```
+
+### Brand folder
+
+| File | Dimensions | Use |
+|------|-----------|-----|
+| `tgc-logo.jpg` | 1280×720 | Source logo file |
+| `tgc-og-1200x630.jpg` | 1200×630 | Open Graph / Twitter card (Facebook, LinkedIn, Twitter, WhatsApp link previews) |
+| `tgc-og-1200x1200.jpg` | 1200×1200 | Square version for platforms that prefer 1:1 (some LinkedIn placements, Instagram) |
+
+**For social meta tags, use:**
+
+```html
+<meta property="og:image" content="https://altitudeaico.github.io/thegarveyclub/brand/tgc-og-1200x630.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://altitudeaico.github.io/thegarveyclub/brand/tgc-og-1200x630.jpg" />
+```
+
+Note: the URL above assumes GitHub Pages is enabled. If using raw GitHub URLs or hosting from GHL media library, swap the URL accordingly.
 
 ## Naming convention
 
